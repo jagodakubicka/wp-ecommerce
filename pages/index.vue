@@ -76,6 +76,9 @@ const { data: posts } = await useWpApi().getPosts<any>(); //interface for post i
   height: 40px;
   background: #c01f21;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .hero img {
   position: absolute;
@@ -86,17 +89,21 @@ const { data: posts } = await useWpApi().getPosts<any>(); //interface for post i
   object-fit: cover;
 }
 
-h1 {
+.hero h1 {
   position: absolute;
   white-space: nowrap;
   z-index: 9;
   font-size: 3.5rem;
   text-shadow: -1px 1px 1px rgba(0, 0, 0, 1);
+  color: #fdfdfd;
 }
 .greeting {
   white-space: nowrap;
   z-index: 9;
   font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  color: #fdfdfd;
 }
 
 @media (min-width: 678px) {
