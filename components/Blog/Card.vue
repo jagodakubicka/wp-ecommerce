@@ -42,14 +42,12 @@ const truncatedTitle = computed(() => {
         {{ truncatedTitle }}
       </h3>
       <div v-if="excerpt" v-html="truncatedExcerpt" class="text-sm mb-3"></div>
-      <NuxtLink
-        :to="`/${slug}`"
-        class="text-xs flex items-center gap-2 card-link"
-        >Read more
+      <div class="text-xs flex items-center gap-2 card-link">
+        Read more
         <div class="icon-link">
           <font-awesome :icon="faArrowRightLong" class="text-lg card-icon" />
         </div>
-      </NuxtLink>
+      </div>
     </div>
   </NuxtLink>
 </template>
