@@ -15,4 +15,17 @@ export default defineNuxtConfig({
       wpUri: process.env.WP_URI,
     },
   },
+  tailwindcss: {
+    config: {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#bf2222b4',
+            dark: 'rgba(29,29,29,1)',
+            light: '#fdfdfd',
+          },
+        },
+      },
+    },
+  },
 });

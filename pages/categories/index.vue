@@ -10,7 +10,7 @@ const { data: categories } = await useWpApi().getCategories<any>(); //iterface i
         v-for="category in categories"
         :key="category.id"
         :to="`/categories/${category.slug}`"
-        class="block py-2 px-4 bg-gray-300 rounded hover:bg-gray-400"
+        class="block py-2 px-4 bg-primary rounded hover:bg-gray-600"
         >#{{ category.name }}</NuxtLink
       >
     </div>
