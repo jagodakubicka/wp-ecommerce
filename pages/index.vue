@@ -57,8 +57,12 @@ onBeforeUnmount(() => {
         <p class="font-brand">explore</p>
       </a>
     </section>
-    <section class="container mt-20">
-      <h1 class="text-center p-6 text-4xl font-brand">Featured Posts</h1>
+    <section class="container mt-20" id="about">
+      <PageSectionTitle
+        decor="日本を発見"
+        title="Featured Posts"
+        subtitle="From futuristic cities of the future to the cities that will take you back
+      in time." />
       <div class="grid sm:grid-cols-3 gap-5 p-4">
         <BlogCard
           v-for="post in posts"

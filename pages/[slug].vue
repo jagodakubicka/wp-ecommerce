@@ -10,9 +10,9 @@ const post = posts.value[0];
   <main>
     <section class="header container py-24">
       <div class="post-title text-center mb-3">
-        <h1 class="text-3xl sm:text-5xl font-bold">
-          {{ post.title.rendered }}
-        </h1>
+        <div
+          class="text-3xl sm:text-5xl font-bold"
+          v-html="post.title.rendered"></div>
       </div>
       <div class="post-meta text-center flex items-center justify-center gap-3">
         <span>Written by {{ post._embedded['author'][0].name }} </span>

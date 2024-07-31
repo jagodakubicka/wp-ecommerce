@@ -38,9 +38,7 @@ const truncatedTitle = computed(() => {
         class="absolute object-cover w-full h-full" />
     </div>
     <div class="p-5">
-      <h3 class="text-xl font-semibold mb-3">
-        {{ truncatedTitle }}
-      </h3>
+      <div v-html="truncatedTitle" class="text-xl font-semibold mb-3"></div>
       <div v-if="excerpt" v-html="truncatedExcerpt" class="text-sm mb-3"></div>
       <div class="text-xs flex items-center gap-2 card-link">
         Read more
@@ -74,7 +72,7 @@ const truncatedTitle = computed(() => {
   transform: translate(150%, -50%);
 }
 
-.card-link:hover .card-icon {
+.card:hover .card-icon {
   margin-left: 10px;
 }
 </style>
